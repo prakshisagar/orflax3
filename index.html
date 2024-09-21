@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orflax - German Technology Wires & Cables</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1rem;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 3rem;
+            color: #ffd700;
+            text-shadow: 3px 3px 0 #ffffff;
+        }
+        .nav {
+            margin-top: 1rem;
+        }
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 2px solid #ffd700;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: #ffd700;
+            color: #000000;
+        }
+        .cta-button {
+            background-color: #ffd700;
+            color: #000000;
+            padding: 0.5rem 1rem;
+            border: 3px solid #000000;
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 5px 5px 0 #000000;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            box-shadow: 3px 3px 0 #000000;
+            transform: translate(2px, 2px);
+        }
+        .hero {
+            background-color: #ffd700;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid #000000;
+        }
+        .hero h1 {
+            color: #000000;
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        .section {
+            padding: 3rem 1rem;
+            border-bottom: 5px solid #000000;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .why-choose-us {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            background-color: #ffffff;
+        }
+        .why-choose-us div {
+            background-color: #ffd700;
+            padding: 1rem;
+            border: 3px solid #000000;
+        }
+        .products {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .products ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .products li {
+            background-color: #ffd700;
+            color: #000000;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">OIPI</div>
+            <nav class="nav">
+                <a href="#home" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Home</a>
+                <a href="#about" onmouseover="changeColor(this)" onmouseout="resetColor(this)">About</a>
+                <a href="#products" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Products</a>
+                <a href="#contact" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Orflax</h1>
+            <p>A German Technology - Wires & Cables</p>
+            <p>World's Leading Cable Wire Industry</p>
+            <button class="cta-button" onclick="callNow()">Call Now</button>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>15 Long Years</p>
+            <p>ORFLAX INDIA PVT LTD is dedicated to excel in the research, development and production of wires and cables for electrical and other electronic applications.</p>
+            <p>We are a North India based business group with wide range of copper and aluminium wires & cables.</p>
+            <button class="cta-button">Learn More</button>
+        </div>
+    </section>
+
+    <section class="section why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div>
+                <h3>PERFORMANCE AND RELIABILITY</h3>
+                <p>Human Capital leverages research, analytics, and industry insights to help design and execute critical programs from business driven HR to innovative talent, leadership and change programs.</p>
+            </div>
+            <div>
+                <h3>BEST QUALITY</h3>
+                <p>Works with senior executives to help them solve their toughest and most complex problems by bringing an approach to executable strategy that combines deep industry knowledge and insight.</p>
+            </div>
+            <div>
+                <h3>TECHNOLOGICAL DEVELOPMENT</h3>
+                <p>Delivers solutions that help drive transformation, improve productivity and streamline business operations. Our practical, innovative solutions are linked to measurable goals to help our clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p>ALL TYPES OF ARMOURED CABLES.</p>
+            <p>We are the industry heads and produce the most reliable and trendy solution you are looking for.</p>
+            <ul>
+                <li>MULTISTAND WIRES (NEXA SERIES)</li>
+                <li>SUBMERSIBLE CABLES</li>
+                <li>MULTICORE ROUND CABLE</li>
+                <li>ALUMINIMUM ROUND CABLE</li>
+                <li>ALUMINIMUM SERVICE CABLE</li>
+                <li>PARALLEL FLET CABLE</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>All rights reserved by OrflaxIndia.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to display an alert when the "Call Now" button is clicked
+        function callNow() {
+            alert('Calling Orflax...');
+        }
+
+        // Function to change the color of navigation links on hover
+        function changeColor(element) {
+            element.style.color = '#ffd700';
+        }
+
+        // Function to reset the color of navigation links when not hovered
+        function resetColor(element) {
+            element.style.color = '#ffffff';
+        }
+    </script>
+</body>
+</html>
